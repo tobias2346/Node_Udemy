@@ -1,8 +1,8 @@
 require('dotenv').config()
 
-const Server = require('./models/server')
+ //importa a la class del server
+const app = require('./Server/server')
 
-const server = new Server();
 
-
-server.listen();  
+ //Llama al servidor principal
+ app.listen();  

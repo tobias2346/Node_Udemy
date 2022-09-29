@@ -1,5 +1,4 @@
-
-
+//Crea un Schema sobre el Rol 
 const { Schema, model } = require('mongoose');
 
 const RoleSchema = Schema({

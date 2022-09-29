@@ -1,8 +1,9 @@
 const { response, request } = require('express');
-const Usuario = require('../models/usuario');
+const Usuario = require('../models/usuarioSchema');
 const bcryptjs = require('bcryptjs');
 
-
+//LLama funciones para desahogar a users y las llama en ese archivo
+//Hace las verificaciones en estas funciones
 const usuariosGet = (req = request, res = response) => {
 
     const { q, nombre = "No name", apikey } = req.query;
